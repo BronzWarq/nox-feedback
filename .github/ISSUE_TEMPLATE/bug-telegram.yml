@@ -1,0 +1,54 @@
+name: "🐞 Ошибка Telegram"
+description: Сообщить о проблеме в Telegram-боте
+title: "[Telegram]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за сообщение. Не публикуйте токены, пароли, API-ключи и содержимое `.env`.
+  - type: input
+    id: command
+    attributes:
+      label: Команда или раздел
+      description: Какая команда, кнопка или страница использовалась?
+      placeholder: "/команда или название кнопки"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как повторить проблему
+      description: Перечислите действия по порядку.
+      placeholder: "1. Открыл...\n2. Нажал...\n3. Получил..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемый результат
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Фактический результат
+    validations:
+      required: true
+  - type: input
+    id: time
+    attributes:
+      label: Примерное время и часовой пояс
+      placeholder: "21 октября, 20:15 UTC+3"
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Дополнительные материалы
+      description: Приложите обезличенный снимок экрана или безопасный фрагмент журнала.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Проверка безопасности
+      options:
+        - label: Я удалил из материалов токены, ключи, пароли и персональные данные.
+          required: true
+

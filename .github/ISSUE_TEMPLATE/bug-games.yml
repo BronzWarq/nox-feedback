@@ -1,0 +1,66 @@
+name: "🎮 Ошибка Nox Games"
+description: Сообщить о зависании или неправильной работе игры
+title: "[Nox Games]: "
+body:
+  - type: dropdown
+    id: game
+    attributes:
+      label: Игра или раздел
+      options:
+        - Кубы
+        - Дуэль
+        - Крестики-нолики
+        - Викторина
+        - Объясни слово
+        - Nox Cards
+        - База и Нокси
+        - Команды и подарки
+        - Другое
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Что происходило перед ошибкой
+      placeholder: "Укажите команды, нажатые кнопки и номер раунда."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемый результат
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Фактический результат
+    validations:
+      required: true
+  - type: dropdown
+    id: repeatable
+    attributes:
+      label: Ошибка повторяется?
+      options:
+        - Всегда
+        - Иногда
+        - Произошла один раз
+        - Пока не проверялось
+    validations:
+      required: true
+  - type: input
+    id: time
+    attributes:
+      label: Примерное время и часовой пояс
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Снимок экрана или дополнительная информация
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Проверка безопасности
+      options:
+        - label: Материалы не содержат секретов и персональных данных.
+          required: true
+

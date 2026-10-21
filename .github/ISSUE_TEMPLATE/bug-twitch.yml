@@ -1,0 +1,57 @@
+name: "📡 Ошибка Twitch"
+description: Сообщить о проблеме с командами, событиями или уведомлениями Twitch
+title: "[Twitch]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Укажите название канала только если оно уже публично. Не прикладывайте OAuth-токены и секреты приложения.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Область проблемы
+      options:
+        - Команда в чате
+        - Уведомление о начале стрима
+        - EventSub-событие
+        - Привязка аккаунта
+        - Nox Live
+        - Другое
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как повторить проблему
+      placeholder: "1. Запустил...\n2. Отправил...\n3. Бот..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемый результат
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Фактический результат
+    validations:
+      required: true
+  - type: input
+    id: time
+    attributes:
+      label: Примерное время и часовой пояс
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Дополнительные материалы
+      description: Обезличенный снимок экрана или безопасный фрагмент журнала.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Проверка безопасности
+      options:
+        - label: Материалы не содержат OAuth-токенов, ключей, паролей и персональных данных.
+          required: true
+
