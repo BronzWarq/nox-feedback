@@ -1,36 +1,36 @@
-name: "💡 Предложение"
-description: Предложить функцию или улучшение Nox
-title: "[Предложение]: "
+name: "💡 Предложение / Feature request"
+description: Предложить улучшение Nox / Suggest a Nox improvement
+title: "[Feature Request]: "
 body:
   - type: dropdown
     id: area
     attributes:
-      label: Раздел
+      label: Раздел / Area
       options:
         - Telegram
         - Twitch
         - Nox Games
         - Nox Cards
-        - База и Нокси
+        - База и Нокси / Base and Noxy
         - Nox Live
-        - Другое
+        - Другое / Other
     validations:
       required: true
   - type: textarea
     id: problem
     attributes:
-      label: Какую задачу решает предложение
-      description: Опишите ситуацию, в которой текущего поведения недостаточно.
+      label: Какую задачу решает предложение / Problem to solve
+      description: Опишите ситуацию, в которой текущего поведения недостаточно. / Describe why the current behavior is insufficient.
     validations:
       required: true
   - type: textarea
     id: solution
     attributes:
-      label: Предлагаемое решение
+      label: Предлагаемое решение / Proposed solution
     validations:
       required: true
   - type: textarea
     id: details
     attributes:
-      label: Дополнительные примеры или макеты
+      label: Дополнительные примеры или макеты / Additional examples or mockups
 

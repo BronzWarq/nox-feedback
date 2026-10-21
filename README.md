@@ -1,5 +1,7 @@
 # Nox Feedback
 
+## Русский
+
 Публичный центр обратной связи для пользователей и тестеров Nox.
 
 Здесь можно:
@@ -9,7 +11,7 @@
 - описать ошибку в Nox Games;
 - предложить новую функцию или улучшение.
 
-## Как создать обращение
+### Как создать обращение
 
 1. Откройте вкладку **Issues**.
 2. Нажмите **New issue**.
@@ -19,18 +21,38 @@
 
 Перед созданием обращения проверьте открытые Issues: возможно, о проблеме уже сообщили.
 
-## Безопасность и конфиденциальность
+### Безопасность и конфиденциальность
 
-Репозиторий публичный. Не публикуйте:
-
-- токены Telegram или Twitch;
-- API-ключи и пароли;
-- содержимое файлов `.env`;
-- коды авторизации;
-- персональные данные участников;
-- закрытые журналы сервера без предварительного удаления секретов.
-
-Если снимок экрана содержит личные данные, закройте их перед публикацией.
+Репозиторий публичный. Не публикуйте токены, API-ключи, пароли, содержимое `.env`, коды авторизации, персональные данные и необработанные журналы сервера. Закройте личные данные на снимках экрана.
 
 Исходный код Nox хранится отдельно и не публикуется в этом репозитории.
+
+---
+
+## English
+
+This is the public feedback center for Nox users and testers.
+
+You can use it to:
+
+- report a Telegram bot problem;
+- report a Twitch integration problem;
+- report a Nox Games bug;
+- suggest a new feature or improvement.
+
+### How to submit feedback
+
+1. Open the **Issues** tab.
+2. Select **New issue**.
+3. Choose the relevant form.
+4. Describe the steps, expected result, and actual result.
+5. Attach a screenshot when possible.
+
+Before opening an issue, check existing issues to see whether the problem has already been reported.
+
+### Security and privacy
+
+This repository is public. Never publish tokens, API keys, passwords, `.env` contents, authorization codes, personal data, or unredacted server logs. Remove private information from screenshots before uploading them.
+
+The Nox source code is stored separately and is not published in this repository.
 

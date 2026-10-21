@@ -1,66 +1,66 @@
-name: "🎮 Ошибка Nox Games"
-description: Сообщить о зависании или неправильной работе игры
-title: "[Nox Games]: "
+name: "🎮 Ошибка Nox Games / Nox Games bug"
+description: Сообщить о проблеме в игре / Report a game problem
+title: "[Nox Games Bug]: "
 body:
   - type: dropdown
     id: game
     attributes:
-      label: Игра или раздел
+      label: Игра или раздел / Game or section
       options:
-        - Кубы
-        - Дуэль
-        - Крестики-нолики
-        - Викторина
-        - Объясни слово
+        - Кубы / Dice
+        - Дуэль / Duel
+        - Крестики-нолики / Tic-tac-toe
+        - Викторина / Quiz
+        - Объясни слово / Explain the word
         - Nox Cards
-        - База и Нокси
-        - Команды и подарки
-        - Другое
+        - База и Нокси / Base and Noxy
+        - Команды и подарки / Teams and gifts
+        - Другое / Other
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: Что происходило перед ошибкой
-      placeholder: "Укажите команды, нажатые кнопки и номер раунда."
+      label: Что происходило перед ошибкой / Steps before the problem
+      placeholder: "Укажите команды, кнопки и номер раунда. / Include commands, buttons, and the round number."
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: Ожидаемый результат
+      label: Ожидаемый результат / Expected result
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
-      label: Фактический результат
+      label: Фактический результат / Actual result
     validations:
       required: true
   - type: dropdown
     id: repeatable
     attributes:
-      label: Ошибка повторяется?
+      label: Ошибка повторяется? / Can you reproduce it?
       options:
-        - Всегда
-        - Иногда
-        - Произошла один раз
-        - Пока не проверялось
+        - Всегда / Always
+        - Иногда / Sometimes
+        - Произошла один раз / Happened once
+        - Пока не проверялось / Not tested yet
     validations:
       required: true
   - type: input
     id: time
     attributes:
-      label: Примерное время и часовой пояс
+      label: Примерное время и часовой пояс / Approximate time and time zone
   - type: textarea
     id: evidence
     attributes:
-      label: Снимок экрана или дополнительная информация
+      label: Снимок экрана или дополнительная информация / Screenshot or additional details
   - type: checkboxes
     id: safety
     attributes:
-      label: Проверка безопасности
+      label: Проверка безопасности / Safety check
       options:
-        - label: Материалы не содержат секретов и персональных данных.
+        - label: Материалы не содержат секретов и персональных данных. / The attachments contain no secrets or personal data.
           required: true
 

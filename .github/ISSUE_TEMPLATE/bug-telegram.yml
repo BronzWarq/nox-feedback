@@ -1,54 +1,55 @@
-name: "🐞 Ошибка Telegram"
-description: Сообщить о проблеме в Telegram-боте
-title: "[Telegram]: "
+name: "🐞 Ошибка Telegram / Telegram bug"
+description: Сообщить о проблеме в Telegram-боте / Report a Telegram bot problem
+title: "[Telegram Bug]: "
 body:
   - type: markdown
     attributes:
       value: |
         Спасибо за сообщение. Не публикуйте токены, пароли, API-ключи и содержимое `.env`.
+        Thank you for the report. Do not publish tokens, passwords, API keys, or `.env` contents.
   - type: input
     id: command
     attributes:
-      label: Команда или раздел
-      description: Какая команда, кнопка или страница использовалась?
-      placeholder: "/команда или название кнопки"
+      label: Команда или раздел / Command or section
+      description: Какая команда, кнопка или страница использовалась? / Which command, button, or page did you use?
+      placeholder: "/command or button name"
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: Как повторить проблему
-      description: Перечислите действия по порядку.
-      placeholder: "1. Открыл...\n2. Нажал...\n3. Получил..."
+      label: Как повторить проблему / Steps to reproduce
+      description: Перечислите действия по порядку. / List the actions in order.
+      placeholder: "1. Opened...\n2. Selected...\n3. Received..."
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: Ожидаемый результат
+      label: Ожидаемый результат / Expected result
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
-      label: Фактический результат
+      label: Фактический результат / Actual result
     validations:
       required: true
   - type: input
     id: time
     attributes:
-      label: Примерное время и часовой пояс
-      placeholder: "21 октября, 20:15 UTC+3"
+      label: Примерное время и часовой пояс / Approximate time and time zone
+      placeholder: "21 October, 20:15 UTC+3"
   - type: textarea
     id: evidence
     attributes:
-      label: Дополнительные материалы
-      description: Приложите обезличенный снимок экрана или безопасный фрагмент журнала.
+      label: Дополнительные материалы / Additional evidence
+      description: Приложите обезличенный снимок экрана или безопасный фрагмент журнала. / Attach a redacted screenshot or safe log excerpt.
   - type: checkboxes
     id: safety
     attributes:
-      label: Проверка безопасности
+      label: Проверка безопасности / Safety check
       options:
-        - label: Я удалил из материалов токены, ключи, пароли и персональные данные.
+        - label: Я удалил токены, ключи, пароли и персональные данные. / I removed tokens, keys, passwords, and personal data.
           required: true
 

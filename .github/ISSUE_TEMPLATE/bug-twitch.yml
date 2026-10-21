@@ -1,57 +1,58 @@
-name: "📡 Ошибка Twitch"
-description: Сообщить о проблеме с командами, событиями или уведомлениями Twitch
-title: "[Twitch]: "
+name: "📡 Ошибка Twitch / Twitch bug"
+description: Сообщить о проблеме Twitch / Report a Twitch integration problem
+title: "[Twitch Bug]: "
 body:
   - type: markdown
     attributes:
       value: |
         Укажите название канала только если оно уже публично. Не прикладывайте OAuth-токены и секреты приложения.
+        Include a channel name only if it is already public. Never attach OAuth tokens or application secrets.
   - type: dropdown
     id: area
     attributes:
-      label: Область проблемы
+      label: Область проблемы / Affected area
       options:
-        - Команда в чате
-        - Уведомление о начале стрима
-        - EventSub-событие
-        - Привязка аккаунта
+        - Команда в чате / Chat command
+        - Уведомление о начале стрима / Stream alert
+        - EventSub-событие / EventSub event
+        - Привязка аккаунта / Account linking
         - Nox Live
-        - Другое
+        - Другое / Other
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: Как повторить проблему
-      placeholder: "1. Запустил...\n2. Отправил...\n3. Бот..."
+      label: Как повторить проблему / Steps to reproduce
+      placeholder: "1. Started...\n2. Sent...\n3. The bot..."
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: Ожидаемый результат
+      label: Ожидаемый результат / Expected result
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
-      label: Фактический результат
+      label: Фактический результат / Actual result
     validations:
       required: true
   - type: input
     id: time
     attributes:
-      label: Примерное время и часовой пояс
+      label: Примерное время и часовой пояс / Approximate time and time zone
   - type: textarea
     id: evidence
     attributes:
-      label: Дополнительные материалы
-      description: Обезличенный снимок экрана или безопасный фрагмент журнала.
+      label: Дополнительные материалы / Additional evidence
+      description: Обезличенный снимок экрана или безопасный фрагмент журнала. / Add a redacted screenshot or safe log excerpt.
   - type: checkboxes
     id: safety
     attributes:
-      label: Проверка безопасности
+      label: Проверка безопасности / Safety check
       options:
-        - label: Материалы не содержат OAuth-токенов, ключей, паролей и персональных данных.
+        - label: Материалы не содержат секретов и персональных данных. / The attachments contain no secrets or personal data.
           required: true
 
