@@ -2,7 +2,8 @@
 
 ## 🤖 Nox в Telegram / Nox on Telegram
 
-**[Открыть Nox в Telegram / Open Nox on Telegram](https://t.me/shmalala_bot)**  
+**[Открыть Nox в Telegram / Open Nox on Telegram](https://t.me/shmalala_bot)**
+
 Username: **[@shmalala_bot](https://t.me/shmalala_bot)**
 
 **RU:** Nox — помощник для сообществ Telegram и Twitch. Он объединяет модерацию, уведомления о трансляциях, общие Core Points, статистику, Nox Games, коллекционные карточки, базу сообщества, Умный Nox и Nox Live.
