@@ -33,12 +33,6 @@ Username: **[@NoxDropBot](https://t.me/NoxDropBot)**
 
 Перед созданием обращения проверьте открытые Issues: возможно, о проблеме уже сообщили.
 
-### Безопасность и конфиденциальность
-
-Репозиторий публичный. Не публикуйте токены, API-ключи, пароли, содержимое `.env`, коды авторизации, персональные данные и необработанные журналы сервера. Закройте личные данные на снимках экрана.
-
-Исходный код Nox хранится отдельно и не публикуется в этом репозитории.
-
 ---
 
 ## English
@@ -61,10 +55,4 @@ You can use it to:
 5. Attach a screenshot when possible.
 
 Before opening an issue, check existing issues to see whether the problem has already been reported.
-
-### Security and privacy
-
-This repository is public. Never publish tokens, API keys, passwords, `.env` contents, authorization codes, personal data, or unredacted server logs. Remove private information from screenshots before uploading them.
-
-The Nox source code is stored separately and is not published in this repository.
 
